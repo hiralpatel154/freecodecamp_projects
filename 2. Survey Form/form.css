@@ -1,0 +1,45 @@
+#survey-form input[type=text] {
+    width: 400px;
+    height: 40px;
+}
+
+#survey-form input[type=email] {
+    width: 400px;
+    height: 40px;
+}
+
+#survey-form input[type=number] {
+    width: 400px;
+    height: 40px;
+}
+
+.container {
+    width: 70%;
+}
+
+.form-group {
+    margin-top: 3rem;
+}
+
+.form-check {
+    margin-top: 3rem;
+}
+
+.form-control:hover {
+    background-color: lightgrey;
+}
+
+.container #title {
+    color: green;
+    font-family: 'Baloo Bhaina 2', cursive;
+    margin-top: 4rem;
+}
+
+.container #description {
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+
+}

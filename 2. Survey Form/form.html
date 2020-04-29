@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- form css -->
+    <link rel="stylesheet" href="/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@700&display=swap" rel="stylesheet">
+
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="survey-form">
+            <h1 id="title"><b>Survey of Sports Participation in Rural Areas</b></h1>
+            <p id="description">
+                As part of my work in sports sector,I am researching the differences in sporting opportunities between
+                rural and
+                urban communities.<br><br>
+
+                I would be very grateful if you could complete this survey to help with my research.<br><br>
+
+                Your feedback is greatly appreciated.<br><br>
+
+                Thank you!!
+            </p>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleFormControlInput1" id="name-label">Your Name</label>
+                    <input type="text" class="form-control" placeholder="Abc Xyz" id="name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1" id="email-label">Email address</label>
+                <input type="email" class="form-control" placeholder="name@example.com" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required
+                    >
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1" id="number-label">Your age</label>
+                <input type="text" class="form-control" placeholder="25"  min="3" max="150" pattern="[0-9]" required>
+            </div>
+
+            <div class="form-check">
+                <h5>1. What is your gender?</h5>
+                <input  type="radio" name="gender" value="male"> Male<br>
+                <input  type="radio" name="gender" value="female"> Female<br>
+            </div>
+
+
+            <div class="form-check">
+                <h5>2. Where do you live?</h5>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">City</a>
+                    <a class="dropdown-item" href="#">Town</a>
+                    <a class="dropdown-item" href="#">Village</a>
+                </div>
+            </div>
+
+            <div class="form-check">
+                <h5>3. What sport(s) do you participate in?</h5>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+
+            </div>
+
+            <div class="form-check">
+                <h5>4. What category best describes your involvment in sport?
+                </h5>
+                <input  type="radio" name="involve" value=""> Competitive<br>
+                <input  type="radio" name="involve" value=""> Recreational (for fun)<br>
+                <label for="text">Other (please specify)</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="form-check">
+                <h5>5. What limitations are there when it comes to your sport(s)?</h5>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+            </div>
+
+            <div class="form-check">
+                <h5>6. How does living in a rural area affect you financially when participating in sport? (eg. cost of
+                    travel to training,
+                    competition, extra coaches etc)</h5>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+
+
+            </div>
+
+            <div class="form-check">
+                <h5>7. How does living in a rural area affect you physically when participating in sport? (eg. distance
+                    to
+                    travel, early
+                    morning rises, time spent away from home, missing school etc)</h5>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+
+
+            </div>
+
+            <div class="form-check">
+                <h5>8. How does living in a rural area affect your training? (weather, facilities). Please answer in
+                    detail.
+                </h5>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+
+
+            </div>
+
+            <div class="form-check">
+                <h5>9. Do you feel that living in a rural area restricts your opportunities/future in your sport?</h5>
+                <input  type="radio" name="restrict" value="male"> Yes<br>
+                <input  type="radio" name="restrict" value="female"> No<br>
+                <label for="text">if yes, please specify.</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="submit" style="margin-left: 50%; margin-bottom: 2rem; margin-top: 2rem;">Submit</button>
+            
+
+
+        </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
