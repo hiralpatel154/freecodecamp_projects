@@ -1,0 +1,43 @@
+body {
+    /* background: linear-gradient(to right,red, orange, yellow, green, cyan, blue, violet); */
+    background: lightsalmon;
+}
+
+header #header-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+    border-radius: 26%;
+
+}
+
+header nav {
+    margin-bottom: 3rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: lightskyblue;
+}
+
+.flex-container>div {
+
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+
+@media only screen and (min-width: 300px) and (max-width:500px) {
+    .flex-container {
+        display: block;
+        background-color: blueviolet;
+    }
+}
