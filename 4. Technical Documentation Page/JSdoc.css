@@ -1,0 +1,69 @@
+body {
+    background-color: lightblue;
+    display: block;
+    margin: 8px;
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+
+html {
+    display: block;
+}
+
+div.main-body {
+    display: grid;
+    grid-template-columns: minmax(250px, auto) 1fr;
+    grid-gap: 20px;
+    grid-template-areas: "navbar mainContent";
+}
+
+nav#navbar {
+    grid-area: navbar;
+    position: fixed;
+}
+
+nav#navbar a {
+    display: block;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+main#main-doc {
+    grid-area: mainContent;
+    grid-row-start: mainContent;
+    grid-column-start: mainContent;
+    grid-row-end: mainContent;
+    grid-column-end: mainContent;
+}
+
+main {
+    display: block;
+}
+
+section {
+    display: block;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+code {
+    background-color: #ccc;
+    padding: 20px;
+    display: block;
+}
