@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Documentation</title>
+    <link rel="stylesheet" href="/JSdoc.css">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</head>
+
+
+<body>
+    <div class="main-body">
+        <nav id="navbar">
+            <header>JS Documentation</header>
+            <a href="#Introduction" class="nav-link">Introduction</a>
+            <a href="#Console_Logs" class="nav-link">Console Logs</a>
+            <a href="#JS_Output" class="nav-link">JS Output</a>
+            <a href="#Variables" class="nav-link">Variables</a>
+            <a href="#Scope" class="nav-link">Scope</a>
+        </nav>
+        <main id="main-doc">
+        <section class="main-section">
+            <header id="Indroduction">Introduction</header>
+            <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight
+                language. Inside a
+                host environment (for example, a web browser), JavaScript can be connected to the objects of its
+                environment to provide
+                programmatic control over them.</p>
+            <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of
+                language elements
+                such as operators, control structures, and statements. Core JavaScript can be extended for a variety
+                of purposes by
+                supplementing it with additional objects; for example:</p>
+            <ul>
+                <li>Client-side JavaScript extends the core language by supplying objects to control a browser and
+                    its Document Object Model
+                    (DOM). For example, client-side extensions allow an application to place elements on an HTML
+                    form and respond to user
+                    events such as mouse clicks, form input, and page navigation.</li>
+                <li>Server-side JavaScript extends the core language by supplying objects relevant to running
+                    JavaScript on a server. For
+                    example, server-side extensions allow an application to communicate with a database, provide
+                    continuity of information
+                    from one invocation to another of the application, or perform file manipulations on a server.
+                </li>
+            </ul>
+            <code>
+                function greetMe(yourName) { alert("Hello " + yourName); } greetMe("World");
+                        
+            </code><br>
+        </section>
+        <section class="main-section">
+            <header id="Console_Logs">Console Logs</header>
+            <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The
+                JavaScript language
+                resembles Java but does not have Java's static typing and strong type checking. JavaScript follows
+                most Java expression
+                syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed
+                from LiveScript to
+                JavaScript.</p>
+            <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a
+                runtime system based
+                on a small number of data types representing numeric, Boolean, and string values. JavaScript has a
+                prototype-based
+                object model instead of the more common class-based object model. The prototype-based model provides
+                dynamic
+                inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports
+                functions without any
+                special declarative requirements. Functions can be properties of objects, executing as loosely typed
+                methods.</p>
+            <code>
+                document.getElementById("demo").innerHTML = 10.50;
+            </code><br>
+        </section>
+        <section class="main-section">
+            <header id="JS_Output">JS Output</header>
+            <p>JavaScript can "display" data in different ways:
+                <li>Writing into an HTML element, using innerHTML.</li>
+                <li>Writing into the HTML output using document.write().</li>
+                <li>Writing into an alert box, using window.alert().</li>
+                <li>
+                    Writing into the browser console, using console.log().
+                </li>
+            </p>
+            <p><h4>Using innerHTML</h4>
+                To access an HTML element, JavaScript can use the document.getElementById(id) method.
+
+                The id attribute defines the HTML element. The innerHTML property defines the HTML content: <br><br>
+                <code>
+                document.getElementById("demo").innerHTML = 5 + 6;
+            </code><br>
+                <h4>Using document.write()</h4>
+                For testing purposes, it is convenient to use document.write(): <br><br>
+                <code>
+                document.write(5 + 6);
+            </code><br>
+                <h4>Using window.alert()</h4>
+                <code>
+                window.alert(5 + 6);
+            </code><br>
+
+                <h4>Using console.log()</h4>
+                For debugging purposes, you can call the console.log() method in the browser to display data. <br><br>
+                <code>
+                console.log(5 + 6);
+            </code> <br>
+                <h4>JavaScript Print</h4>
+                JavaScript does not have any print object or print methods.
+
+                You cannot access output devices from JavaScript.
+
+                The only exception is that you can call the window.print() method in the browser to print the
+                content of the current
+                window. <br><br>
+                <code>
+                window.print()
+            </code>
+            </p>
+        </section>
+        <section class="main-section">
+            <header id="Variables">Variables</header>
+            <p>Global variables are in fact properties of the global object. In web pages the global object is
+                window, so you can set
+                and access global variables using the window.variable syntax.</p>
+            <p>Consequently, you can access global variables declared in one window or frame from another window or
+                frame by specifying
+                the window or frame name. For example, if a variable called phoneNumber is declared in a document,
+                you can refer to this
+                variable from an iframe as parent.phoneNumber.</p>
+            <code>
+                const PI = 3.14;<br><br><br>
+                // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL CAUSE AN ERROR ALSO function f() { const g = 5;
+                var g; //statements }
+            </code><br>
+        </section>
+        <section class="main-section">
+            <header id="Scope">Scope</header>
+            <p>When you declare a variable outside of any function, it is called a global variable, because it is
+                available to any
+                other code in the current document. When you declare a variable within a function, it is called a
+                local variable,
+                because it is available only within that function.</p>
+            <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared
+                within a block is
+                local to the function (or global scope) that the block resides within. For example the following
+                code will log 5,
+                because the scope of x is the function (or global context) within which x is declared, not the
+                block, which in this case
+                is an if statement.</p>
+            <code>
+                if (true) { var x = 5; } console.log(x); // 5
+            </code>
+        </section>
+        </main>
+    </div>
+</body>
+</html>
